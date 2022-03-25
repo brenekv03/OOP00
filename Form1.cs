@@ -28,5 +28,13 @@ namespace OOP00
             if (p != -1) MessageBox.Show(stdt.GetJmeno() + " má průměr známek: " + p);
             else MessageBox.Show(stdt.GetJmeno() + " není klasifikován");        
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Student stdt2 = new Student("Kamil", 1, 2, 3);
+            double p = stdt2.Prumer();
+            if (p != -1) MessageBox.Show(stdt2.GetJmeno() + " má průměr známek: " + p);
+            else MessageBox.Show(stdt2.GetJmeno() + " není klasifikován");
+        }
     }
 }

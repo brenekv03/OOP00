@@ -9,8 +9,8 @@ namespace OOP00
     class Student
     {
         private string jmeno;
-        private int znamkaMAT;
         private int znamkaCJL;
+        private int znamkaMAT;
         private int znamkaPRG;
         public Student()
         {
@@ -19,6 +19,13 @@ namespace OOP00
         public Student(string jmeno)
         {
             this.jmeno = jmeno;
+        }
+        public Student(string jmeno, int znamkaCJL, int znamkaMAT, int znamkaPRG)
+        {
+            this.jmeno = jmeno;
+            this.znamkaCJL = znamkaCJL;
+            this.znamkaMAT = znamkaMAT;
+            this.znamkaPRG = znamkaPRG;
         }
         public string GetJmeno()
         {
