@@ -65,7 +65,12 @@ namespace OOP00
             MessageBox.Show(zamestnanec.ToString());
             Zamestnanec zamestnanec1 = new Zamestnanec("José", "Noha");
             MessageBox.Show(zamestnanec1.ToString());
-
+            Zamestnanec zamestnanec2 = new Zamestnanec("Andrej", "Babiš", 180, 78.5);
+            MessageBox.Show(zamestnanec2.ToString());
+            zamestnanec2.SetHmotnost(80);
+            zamestnanec2.SetVyska(200);
+            zamestnanec2.BodyMassIndex(zamestnanec2.GetVyska(), zamestnanec2.GetHmotnost());
+            MessageBox.Show(zamestnanec2.ToString());
         }
     }
 }
