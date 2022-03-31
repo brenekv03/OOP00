@@ -19,7 +19,7 @@ namespace OOP00
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Student stdt0 = new Student();
+            //Student stdt = new Student();
             Student stdt = new Student("Luboš");
             stdt.OznamkujCJL(3);
             stdt.OznamkujMAT(2);
@@ -35,6 +35,33 @@ namespace OOP00
             double p = stdt2.Prumer();
             if (p != -1) MessageBox.Show(stdt2.GetJmeno() + " má průměr známek: " + p);
             else MessageBox.Show(stdt2.GetJmeno() + " není klasifikován");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Student student = new Student("Bohdan", "Velmez", 5, 5, 5);
+            double p = student.Prumer();
+            student.SetBydliste("Velkého Meziřičí");
+            if (p != -1) MessageBox.Show(student.GetJmeno() +" z " +student.GetBydliste()+ " má průměr známek: " + p);
+            else MessageBox.Show(student.GetJmeno() + " z " + student.GetBydliste() + " není klasifikován");
+
+            Student student1 = new Student("Kozel", "Velkých Popovic");
+            if (p != -1) MessageBox.Show(student1.GetJmeno() + " z " + student1.GetBydliste() + " má průměr známek: " + p);
+            else MessageBox.Show(student1.GetJmeno() + " z " + student1.GetBydliste() + " není klasifikován");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Student student1 = new Student("Eustáč", "Praha", 1, 1, 1);
+            MessageBox.Show(student1.ToString());
+            MessageBox.Show(textBox1.ToString());
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Zamestnanec zamestnanec = new Zamestnanec();
+            MessageBox.Show(zamestnanec.ToString());
         }
     }
 }
