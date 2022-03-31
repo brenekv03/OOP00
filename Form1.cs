@@ -60,8 +60,12 @@ namespace OOP00
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Zamestnanec zamestnanec = new Zamestnanec();
+            Zamestnanec zamestnanec = new Zamestnanec("Adolf");
+            zamestnanec.SetPrijmeni("Blažek");
             MessageBox.Show(zamestnanec.ToString());
+            Zamestnanec zamestnanec1 = new Zamestnanec("José", "Noha");
+            MessageBox.Show(zamestnanec1.ToString());
+
         }
     }
 }
