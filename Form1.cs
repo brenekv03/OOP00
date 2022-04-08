@@ -72,5 +72,18 @@ namespace OOP00
             zamestnanec2.BodyMassIndex(zamestnanec2.GetVyska(), zamestnanec2.GetHmotnost());
             MessageBox.Show(zamestnanec2.ToString());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OsobaVlastnosti o1 = new OsobaVlastnosti("Alena");
+            MessageBox.Show(o1.ToString());
+            MessageBox.Show(o1.Jmeno);
+            o1.Prijmeni = "Králová";
+            OsobaVlastnosti o2 = new OsobaVlastnosti("Jan", "Havelka", 450, 300);
+            MessageBox.Show(o2.ToString());
+            o2.Vyska = 178;
+            o2.Hmotnost = 3000;
+            MessageBox.Show(o2.ToString());
+        }
     }
 }
