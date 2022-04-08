@@ -78,7 +78,6 @@ namespace OOP00
             OsobaVlastnosti o1 = new OsobaVlastnosti("Alena");
             MessageBox.Show(o1.ToString());
             MessageBox.Show(o1.Jmeno);
-            o1.Prijmeni = "Králová";
             OsobaVlastnosti o2 = new OsobaVlastnosti("Jan", "Havelka", 450, 300);
             MessageBox.Show(o2.ToString());
             o2.Vyska = 178;

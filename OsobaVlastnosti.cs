@@ -8,7 +8,7 @@ namespace OOP00
 {
     class OsobaVlastnosti
     {
-        private string jmeno;
+        /*private string jmeno;
         public string Jmeno
         {
             get
@@ -19,9 +19,10 @@ namespace OOP00
             {
                 jmeno = value;
             }
-        }
+        }*/
+        public string Jmeno { get; private set; } //zkrácená verze;
 
-        private string prijmeni;
+        /*private string prijmeni;
         public string Prijmeni
         {
             get
@@ -32,15 +33,17 @@ namespace OOP00
             {
                 prijmeni = value;
             }
-        }
+        }*/
+        public string Prijmeni { get; private set; } //Zkrácená verze
+
         private int vyska;
         public int Vyska
         {
-            get
+            get //selektor
             {
                 return vyska;
             }
-            set
+            set //modifikátor
             {
                 if (value >= 20 && value <= 300) vyska = value;
             }
